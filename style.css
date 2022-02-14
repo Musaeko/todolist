@@ -1,0 +1,123 @@
+@use '@material/floating-label/mdc-floating-label';
+@use '@material/line-ripple/mdc-line-ripple';
+@use '@material/notched-outline/mdc-notched-outline';
+@use '@material/textfield';
+
+@include textfield.core-styles;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(199, 174, 174, 0.7);
+
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgb(95, 94, 94);
+  width: 500px;
+  margin-top: 10px;
+}
+.todolist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#non1 {
+  border: none;
+  border-radius: 50%;
+  background-color: inherit;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+
+#non2 {
+  border: none;
+  border-radius: 50%;
+  background-color: inherit;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+}
+
+.fa-regular {
+  margin: 2px;
+}
+
+#tasks {
+  width: 200px;
+  color: rgb(95, 10, 57);
+  font-size: large;
+}
+#tasksdate {
+  width: 100px;
+  color: rgba(201, 100, 157, 0.6);
+  font-size: medium;
+}
+
+.line {
+  background-color: rgb(188, 214, 148);
+  color: rgba(199, 174, 174, 0.2);
+}
+
+#addbtn {
+  color: aliceblue;
+  background-color: rgba(201, 100, 157, 0.6);
+  border: none;
+  margin-top: 50px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgb(109, 107, 107);
+  cursor: pointer;
+}
+
+#addbtn:hover {
+  transform: scale(1.03);
+}
+
+#text {
+  border: none;
+  background-color: rgba(247, 212, 229, 0.3);
+  border-bottom: 1px solid rgb(128, 111, 113);
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgb(161, 159, 159);
+  height: 70px;
+  margin-right: 50px;
+}
+#date {
+  border: none;
+  background-color: rgba(247, 212, 229, 0.3);
+  border-bottom: 1px solid rgb(128, 111, 113);
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px rgb(161, 159, 159);
+  height: 70px;
+}
